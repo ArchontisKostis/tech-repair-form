@@ -32,7 +32,7 @@
                     <div class="select-input">
                         <label for="device">Τύπος Συσκευής: <i>*</i></label>
                         <select name="device" id="device" required>
-                            <option selected="true" disabled="disabled">ΠΑΡΑΚΑΛΩ ΕΠΙΛΕΞΤΕ</option> 
+                            <option selected="true" disabled="disabled" value="0">ΠΑΡΑΚΑΛΩ ΕΠΙΛΕΞΤΕ</option> 
                             <option value="Smartphone">Smartphone</option>
                             <option value="Desktop">Σταθερός Η/Υ</option>
                             <option value="Laptop">Laptop</option>
