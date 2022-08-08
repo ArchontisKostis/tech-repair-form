@@ -1,3 +1,5 @@
+<?php include 'backend/sendMail.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +15,7 @@
         <img src="img/logo.png" alt="">
     </header>
     <main>
-        <form action="">
+        <form action="" method="post">
             <div id="form-container">
                 <h1> ΑΝΑΦΟΡΑ ΕΠΙΣΚΕΥΗΣ </h1>
 
@@ -30,7 +32,7 @@
                     <div class="select-input">
                         <label for="device">Τύπος Συσκευής: <i>*</i></label>
                         <select name="device" id="device" required>
-                            <option selected="true" disabled="disabled">ΠΑΡΑΚΑΛΩ ΕΠΙΛΕΞΤΕ</option> 
+                            <option selected="true" disabled="disabled" value="0">ΠΑΡΑΚΑΛΩ ΕΠΙΛΕΞΤΕ</option> 
                             <option value="Smartphone">Smartphone</option>
                             <option value="Desktop">Σταθερός Η/Υ</option>
                             <option value="Laptop">Laptop</option>
@@ -39,7 +41,7 @@
 
                     <div class="select-input">
                         <label for="problem">Τύπος Προβλήματος: <i>*</i></label>
-                        <select name="device" id="problem" required>
+                        <select name="problem" id="problem" required>
                             <option selected="true" disabled="disabled">ΠΑΡΑΚΑΛΩ ΕΠΙΛΕΞΤΕ</option> 
                             <option value="broken-screen">Σπασμένη Οθόνη</option>
                             <option value="speed">Ταχύτητα</option>
@@ -54,7 +56,7 @@
                 <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
             </div>
             
-            <button type="submit">ΑΠΟΣΤΟΛΗ</button>
+            <button type="submit" name="submit" action="sendMail.php">ΑΠΟΣΤΟΛΗ</button>
         </form>
     </main>
     <footer>
