@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archo | Tech Repair Form</title>
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -67,14 +69,24 @@
         </p>
 
         <div class="banner">
-            <img src="../img/banner-image.png" alt="Banner Image" id="banner-img">
+            <img src="../img/screen.png" alt="Banner Image" id="banner-img">
+            <div class="terminal">
+                <h2 class="terminal-text">> Επισκευές Η/Υ </h2>
+            </div>
         </div>
     </main>
     <footer>
         <h2>A Web Form by Archontis Kostis</h2>
         <h2>Copyright 2022 | Everything is reserved so you can't sit here :P</h2>
     </footer>
+
+    <script>
+         const instance = new Typewriter('.terminal-text', {
+      strings: ['> Επισκευές Η/Υ<br>> Αναβαθμίσεις Η/Υ<br>> Επισκευές Smartphone'],
+      autoStart: true,
+      loop: true,
+    });
+    </script>
 </body>
 </html>
 
-<?php session_destroy();?>

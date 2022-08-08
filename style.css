@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* Basic Properties */
+::-moz-selection { /* Code for Firefox */
+  color: #041712;
+  background: #00ff00;
+}
+
+::selection {
+  color: #041712;
+  background: #00ff00;
+}
+
 h1, body {
     margin: 0;
     padding: 0;
@@ -153,7 +163,7 @@ h2:nth-of-type(1){
 
 /* Message Received-not received styles */
 .message-prompt {
-    height: 150vh;
+    height: 140vh;
     justify-content: flex-start;
 }
 
@@ -172,16 +182,33 @@ h2:nth-of-type(1){
 
 .banner {
     width: 100vw;
-    height: 65vh;
+    height: 50vh;
     background-color: #000;
     margin-bottom: 5em;
-    margin-top: 5em;
+    margin-top: 7em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #banner-img {
-    height: 18em;
+    height: 15em;
     width: auto;
+}
+
+.terminal {
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-text {
+    line-height: 1.5;
+    font-size: 1em;
+    width: 25em;
+    height: 4.40em;
+    position: sticky;
+    font-size: 2em;
+    color: #00ff00;
+    margin: 0;
 }
