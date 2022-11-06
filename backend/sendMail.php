@@ -21,18 +21,18 @@
     $problemType = $_POST['problem'];
     $comments = $_POST['comments'];
   
-    // SENT MESSAGE TO RECEIVER
+    // SENT MESSAGE TO RECEIVER - PETROS MAIL
     $mail->isSMTP();
     $mail->CharSet  = 'UTF-8';
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'archontisfreelance@gmail.com'; // Mail address which you want to use as SMTP server
-    $mail->Password = 'guifqxkqjjbcpiyz'; // Mail address Password
+    $mail->Username = 'archo.uom@gmail.com'; // Mail address which you want to use as SMTP server
+    $mail->Password = 'ivkcwhbgzaftsrww'; // Mail address Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '587';
   
-    $mail->setFrom('archontisfreelance@gmail.com'); // Gmail address which you used as SMTP server
-    $mail->addAddress('archontisfreelance@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+    $mail->setFrom('archo.uom@gmail.com'); // Gmail address which you used as SMTP server
+    $mail->addAddress('archo.uom@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
   
     $mail->isHTML(true);
     $mail->Subject = "New Message";
@@ -52,12 +52,12 @@
       $mailToSender->CharSet  = 'UTF-8';
       $mailToSender->Host = 'smtp.gmail.com';
       $mailToSender->SMTPAuth = true;
-      $mailToSender->Username = 'archontisfreelance@gmail.com'; // Mail address which you want to use as SMTP server
-      $mailToSender->Password = 'guifqxkqjjbcpiyz'; // Mail address Password
+      $mailToSender->Username = 'archo.uom@gmail.com'; // Mail address which you want to use as SMTP server
+      $mailToSender->Password = 'ctuehjlojwgwadnr'; // Mail address Password
       $mailToSender->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mailToSender->Port = '587';
   
-      $mailToSender->setFrom('archontisfreelance@gmail.com'); // Gmail address which you used as SMTP server
+      $mailToSender->setFrom('archo.uom@gmail.com'); // Gmail address which you used as SMTP server
       $mailToSender->addAddress($email);
       $mailToSender->isHTML(true);
       $mailToSender->Subject = "Λάβαμε το Μύνημα Σας!";
