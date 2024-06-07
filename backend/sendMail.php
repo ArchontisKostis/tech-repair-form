@@ -27,7 +27,7 @@
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'archontisfreelance@gmail.com'; // Mail address which you want to use as SMTP server
-    $mail->Password = 'guifqxkqjjbcpiyz'; // Mail address Password
+    $mail->Password = 'password'; // Mail address Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '587';
   
